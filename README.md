@@ -26,7 +26,10 @@ A CMS-style blog application with the MVC paradigm in its architectural structur
 
 
 ## Screenshots
-![](public/assets/prompts.png)
+![](public/assets/homepage.png)
+![](public/assets/login.png)
+![](public/assets/edit.png)
+![](public/assets/comment.png)
 
 
 ## Technologies Use
