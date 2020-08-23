@@ -1,10 +1,10 @@
 :root {
-  --primary: #ccdad1;
-  --secondary: #9caea9;
-  --tertiary: #788585;
-  --light-dark: #6f6866;
-  --dark: #38302e;
-  --border-radius: 0.3rem;
+  --primary: #ffffff;
+  --secondary: #5c821a;
+  --tertiary: #c6d166;
+  --light-dark: #0f1b07;
+  --dark: #777e40;
+  --border-radius: 0.2rem;
 }
 
 * {
@@ -15,7 +15,7 @@ body {
   background-color: var(--primary);
   margin: 0;
   padding: 0;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Roboto Slab", serif;
   color: var(--dark);
   line-height: 1.5;
   font-size: 16px;
@@ -27,6 +27,8 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "Do Hyeon", sans-serif;
+
   font-weight: 700;
   margin: 0;
   color: var(--dark);
@@ -42,7 +44,10 @@ h2 a {
 }
 
 header {
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 main {
@@ -102,9 +107,9 @@ input {
 }
 
 .navbar {
-  width: 100%;
-  position: fixed;
-  background-color: var(--dark);
+  /* width: 100%; */
+  /* position: fixed; */
+  /* background-color: var(--dark); */
 }
 
 .nav-item {
@@ -516,5 +521,27 @@ input {
 
   .col-xl-12 {
     flex: 0 0 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+  .nav-item {
+      margin: 0 25px;
   }
 }
